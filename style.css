@@ -1,0 +1,67 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 { color: #0078d4; margin-top: 0; }
+
+.controls { margin-bottom: 20px; }
+select { padding: 8px 12px; font-size: 16px; border-radius: 5px; }
+
+.card {
+  border: 2px solid #e1dfdd;
+  border-left: 6px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  background-color: #fcfcfc;
+}
+
+.card.completed { border-left-color: #107c41; background-color: #f3f9f5; }
+.card.available { border-left-color: #0078d4; background-color: #f0f8ff; }
+.card.locked { border-left-color: #a19f9d; background-color: #f3f2f1; opacity: 0.7; }
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card.completed .status-badge { background: #107c41; color: white; }
+.card.available .status-badge { background: #0078d4; color: white; }
+.card.locked .status-badge { background: #a19f9d; color: white; }
+
+button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover { background-color: #005a9e; }
+
+.ai-box {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px dashed #0078d4;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #323130;
+}
